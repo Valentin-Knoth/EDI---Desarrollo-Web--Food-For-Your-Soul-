@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserva tu mesa en Food For Your Soul - Restaurante Gourmet">
+    <title>Reservación - Food For Your Soul</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&amp;family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/koad-assets.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div id="container" class="active">
+        <header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container">
+					<a class="navbar-brand" href="index.html" aria-label="Food For Your Soul - Inicio">
+						<img src="images/logo.png" alt="Food For Your Soul - Logo del restaurante" loading="eager">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir menú de navegación">
+						<span class="navbar-toggler-icon" aria-hidden="true"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav m-auto">
+							<li class="drop-link">
+								<a href="index.html">Home <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="index.html">Home Default</a></li>
+									<li><a href="home2.html">Home version 2</a></li>
+									<li><a href="home3.html">Home version 3</a></li>
+								</ul>
+							</li>
+							<li class="drop-link">
+								<a href="menu.html">Menu <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="menu.html">Menu Style 1</a></li>
+									<li><a href="menu2.html">Menu Style 2</a></li>
+								</ul>
+							</li>
+							<li class="drop-link">
+								<a class="active" href="about.html">Pages <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="reservation.html" class="active">Reservation</a></li>
+								</ul>
+							</li>
+							<li class="drop-link"><a href="blog.html">News <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="blog.html">Blog Page</a></li>
+									<li><a href="single-post.html">Single Post</a></li>
+								</ul>
+							</li>
+							<li class="drop-link"><a href="contact.html">Contacts <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="contact.html">Contact 1</a></li>
+									<li><a href="contact2.html">Contact 2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<a href="reservation.html" class="button-one">Book a Table</a>
+				</div>
+			</nav>
+		</header>
+
+        <main class="main-content">
+            <section class="reservation-section">
+                <div class="container">
+                    <h1 class="title-section">Reserva tu Mesa</h1>
+                    
+                    <form id="formReservacion" class="contact-form" novalidate aria-label="Formulario de reservación">
+                        <div class="form-group">
+                            <label for="nombre-reserva">Nombre completo <span aria-label="requerido">*</span></label>
+                            <input 
+                                type="text" 
+                                id="nombre-reserva" 
+                                name="nombre" 
+                                required 
+                                minlength="3"
+                                aria-required="true"
+                                aria-describedby="nombre-reserva-error"
+                            >
+                            <small class="error" id="nombre-reserva-error" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-reserva">Correo electrónico <span aria-label="requerido">*</span></label>
+                            <input 
+                                type="email" 
+                                id="email-reserva" 
+                                name="email" 
+                                required
+                                aria-required="true"
+                                aria-describedby="email-reserva-error"
+                            >
+                            <small class="error" id="email-reserva-error" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono-reserva">Teléfono <span aria-label="requerido">*</span></label>
+                            <input 
+                                type="tel" 
+                                id="telefono-reserva" 
+                                name="telefono"
+                                required
+                                pattern="[0-9+\-\s()]+"
+                                aria-required="true"
+                                aria-describedby="telefono-reserva-error"
+                            >
+                            <small class="error" id="telefono-reserva-error" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fecha">Fecha <span aria-label="requerido">*</span></label>
+                            <input 
+                                type="date" 
+                                id="fecha" 
+                                name="fecha" 
+                                required
+                                aria-required="true"
+                                aria-describedby="fecha-error"
+                            >
+                            <small class="error" id="fecha-error" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hora">Hora <span aria-label="requerido">*</span></label>
+                            <input 
+                                type="time" 
+                                id="hora" 
+                                name="hora" 
+                                required
+                                aria-required="true"
+                                aria-describedby="hora-error"
+                            >
+                            <small class="error" id="hora-error" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="personas">Número de personas <span aria-label="requerido">*</span></label>
+                            <input 
+                                type="number" 
+                                id="personas" 
+                                name="personas" 
+                                required
+                                min="1"
+                                max="20"
+                                aria-required="true"
+                                aria-describedby="personas-error"
+                            >
+                            <small class="error" id="personas-error" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comentarios">Comentarios adicionales</label>
+                            <textarea 
+                                id="comentarios" 
+                                name="comentarios" 
+                                rows="3"
+                                maxlength="200"
+                                aria-describedby="comentarios-error"
+                            ></textarea>
+                            <small class="error" id="comentarios-error" role="alert" aria-live="polite"></small>
+                        </div>
+
+                        <button type="submit" class="button-two" aria-label="Confirmar reservación">
+                            Confirmar Reservación
+                        </button>
+
+                        <p id="estado-reserva" class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous" defer></script>
+	<script src="scripts/form-validation.js" defer></script>
+	<script src="scripts/menu-interactive.js" defer></script>
+</body>
+</html>
+
