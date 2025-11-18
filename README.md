@@ -4,8 +4,8 @@
 
 **Título:** Food For Your Soul  
 **Autor:** Alvarez Knoth Valentin
-**Fecha:** 2024  
-**Asignatura:** EDI Programación Web - Clase 13
+**Fecha:** 2025
+**Asignatura:** EDI Programación Web 
 
 ---
 
