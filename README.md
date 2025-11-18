@@ -3,7 +3,7 @@
 ## 📋 Información del Proyecto
 
 **Título:** Food For Your Soul  
-**Autor:** [Tu Nombre]  
+**Autor:** Alvarez Knoth Valentin
 **Fecha:** 2024  
 **Asignatura:** EDI Programación Web - Clase 13
 
